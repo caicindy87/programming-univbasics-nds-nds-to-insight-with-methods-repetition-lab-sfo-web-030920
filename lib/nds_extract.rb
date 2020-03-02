@@ -31,6 +31,7 @@ def list_of_directors(source)
   
   while row_index < source.length do
     name_array.push(source[row_index][:name])
+    row_index += 1
   end
   name_array
 end
