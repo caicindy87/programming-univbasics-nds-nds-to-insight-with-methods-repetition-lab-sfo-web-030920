@@ -26,6 +26,10 @@ end
 
 def list_of_directors(source)
   # Write this implementation
+  row_index = 0
+  while row_index < source.length do
+  source[row_index][:name]
+end
 end
 
 def total_gross(source)
