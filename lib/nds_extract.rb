@@ -9,7 +9,7 @@ def directors_totals(source)
     result[director[:name]] = gross_for_director(director)
     director_index += 1
   end
-  return result
+  result
 end
 
 def gross_for_director(d)
@@ -33,7 +33,7 @@ def list_of_directors(source)
     name_array.push(source[row_index][:name])
     row_index += 1
   end
-  return name_array
+  name_array
 end
 
 def total_gross(source)
@@ -50,7 +50,7 @@ def total_gross(source)
   director_num = 0
   total = 0
   while director_num < source.length do
-    directors_totals[list_of_directors[director_num]]
+    directors_totals[list_of_directors[director_num]
     director_num += 1
   end
  return total 
